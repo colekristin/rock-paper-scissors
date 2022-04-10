@@ -10,37 +10,38 @@ console.log('Player Choice: ' + playerSelection);
 
 function playRound(playerSelection, computerPlay) {
     if (playerSelection.toLowerCase() === 'rock' && computerPlay.toLowerCase() === 'rock') {
-        console.log(`Tie! ${playerSelection} equals ${computerPlay}`)
+        return (`Tie! ${playerSelection} equals ${computerPlay}`)
     }
     else if (playerSelection.toLowerCase() === 'rock' && computerPlay.toLowerCase() === 'paper') {
-        console.log('You lose... Paper beats rock')
+        return ('You lose... Paper beats rock')
     }
     else if (playerSelection.toLowerCase() === 'rock' && computerPlay.toLowerCase() === 'scissors') {
-        console.log('You win! Rock beats scissors')
+        return ('You win! Rock beats scissors')
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerPlay.toLowerCase() === 'rock') {
-        console.log('You win! Paper beats rock')
+        return ('You win! Paper beats rock')
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerPlay.toLowerCase() === 'paper') {
-        console.log('Tie! Paper equals paper')
+        return ('Tie! Paper equals paper')
     }
     else if (playerSelection.toLowerCase() === 'paper' && computerPlay.toLowerCase() === 'scissors') {
-        console.log('You lose...Scissors beats paper')
+        return ('You lose...Scissors beats paper')
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerPlay.toLowerCase() === 'rock') {
-        console.log('You lose...Rock beats scissors')
+        return ('You lose...Rock beats scissors')
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerPlay.toLowerCase() === 'paper') {
-        console.log('You win! Scissors beat paper')
+        return ('You win! Scissors beat paper')
     }
     else if (playerSelection.toLowerCase() === 'scissors' && computerPlay.toLowerCase() === 'scissors') {
-        console.log('Tie! Scissors equals scissors')
+        return ('Tie! Scissors equals scissors')
     }
-    else console.log('Error')
+    else return ('Error')
     
 }
 
 playRound(playerSelection, computerPlay);
+console.log(playRound(playerSelection, computerPlay));
 
 
 
